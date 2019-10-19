@@ -1,10 +1,10 @@
 import React from "react";
 import Login from "./Pages/Login";
-import Registration from "./Components/Registration";
+import Guide from "./Pages/Guide";
 import "./App.css";
 
 function App() {
-  return <Login />;
+  return <Guide />;
 }
 
 export default App;

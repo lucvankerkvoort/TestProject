@@ -44,7 +44,14 @@ button {
   border-radius: 12px;
   box-shadow: 2px 2px 5px black;
   border: none;
-  background: black;
+  background-image: linear-gradient(
+    to right bottom,
+    #1b279d,
+    #0065cf,
+    #0096de,
+    #00c4d7,
+    #49edca
+  );
 }
 
 button:hover {
@@ -68,6 +75,9 @@ button:hover {
   align-items: center;
   background: #00000099;
   height: 100vh;
+  width: 100%;
+  z-index: 17;
+  position: absolute;
 }
 
 .registration-modal {
@@ -77,4 +87,104 @@ button:hover {
   box-shadow: 7px 7px 10px black;
   width: 80vw;
 }
+
+.close {
+  position: absolute;
+  right: 12%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 678px) {
+  .close {
+    right: 15%;
+  }
+  .navbar-search input {
+    width: 100px;
+  }
+}
 /* ------------------------------------------------------------ */
+
+/* --------------------- Guide -------------------- */
+
+.guide {
+  z-index: 15;
+}
+.guide-background {
+  position: fixed;
+  height: 110vh;
+  width: 100%;
+  top: 0px;
+}
+.navbar {
+  display: flex;
+  height: 10vh;
+  position: relative;
+  z-index: 16;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+  flex-direction: row;
+  background-image: linear-gradient(
+    to right bottom,
+    #1b279d,
+    #0065cf,
+    #0096de,
+    #00c4d7,
+    #49edca
+  );
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60vw;
+}
+
+.navbar-menu p {
+  cursor: pointer;
+}
+.navbar-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+}
+
+.guide-welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 15;
+}
+
+.guide-welcome h2 {
+  margin: 0px;
+}
+
+.guide-general {
+  position: relative;
+  z-index: 15;
+  height: 40vh;
+  background-image: linear-gradient(
+    to right bottom,
+    #1b279d,
+    #0065cf,
+    #0096de,
+    #00c4d7,
+    #49edca
+  );
+}
+.guide-footer {
+  z-index: 15;
+  position: relative;
+  height: 20vh;
+  background: rgba(255, 255, 255, 0.3);
+}
+/* 
+background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #00a2d6, #00c4d7, #00c9cc, #13cdbe, #3ad0ae, #2ebb9a, #21a686, #139273, #007e61); 
+#007E61
+#49EDCA
+#1B279D */

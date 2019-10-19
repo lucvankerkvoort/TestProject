@@ -11,6 +11,10 @@ class Login extends React.Component {
   openRegister = () => {
     this.setState({ showRegistration: true });
   };
+
+  closeRegister = input => {
+    this.setState({ showRegistration: input });
+  };
   render() {
     return (
       <div className="background">
@@ -31,7 +35,7 @@ class Login extends React.Component {
             </form>
             <br />
             {this.state.showRegistration ? (
-              <Registration closeButton={this.state.showRegistration} />
+              <Registration closeButton={this.closeRegister} />
             ) : null}
             <p className="registration-link" onClick={this.openRegister}>
               Register Here
