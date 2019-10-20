@@ -18,7 +18,9 @@ class Guide extends React.Component {
           <h2>Welcome {this.state.userName}</h2>
           <p>You can find all of your info below</p>
         </div>
-        <div className="guide-general"></div>
+        <div className="guide-general">
+          <div></div>
+        </div>
         <div className="guide-footer"></div>
       </div>
     );
