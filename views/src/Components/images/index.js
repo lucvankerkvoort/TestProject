@@ -23,11 +23,29 @@ import Asia3 from "./Asia3.jpg";
 import Asia4 from "./Asia4.jpg";
 import Asia5 from "./Asia5.jpg";
 
-import America1 from "./America1.jpg";
-import America2 from "./America2.jpg";
-import America3 from "./America3.jpg";
-import America4 from "./America4.jpg";
-import America5 from "./America5.jpg";
+import NorthAmerica1 from "./NorthAmerica1.jpg";
+import NorthAmerica2 from "./NorthAmerica2.jpg";
+import NorthAmerica3 from "./NorthAmerica3.jpg";
+import NorthAmerica4 from "./NorthAmerica4.jpg";
+import NorthAmerica5 from "./NorthAmerica5.jpg";
+
+import SouthAmerica1 from "./SouthAmerica1.jpg";
+import SouthAmerica2 from "./SouthAmerica2.jpg";
+import SouthAmerica3 from "./SouthAmerica3.jpg";
+import SouthAmerica4 from "./SouthAmerica4.jpg";
+import SouthAmerica5 from "./SouthAmerica5.jpg";
+
+import Oceania1 from "./Oceania1.jpg";
+import Oceania2 from "./Oceania2.jpg";
+import Oceania3 from "./Oceania3.jpg";
+import Oceania4 from "./Oceania4.jpg";
+import Oceania5 from "./Oceania5.jpg";
+
+import Africa1 from "./Africa1.jpg";
+import Africa2 from "./Africa2.jpg";
+import Africa3 from "./Africa3.jpg";
+import Africa4 from "./Africa4.jpg";
+import Africa5 from "./Africa5.jpg";
 
 export const traveler = [Image1, Image2, Image3, Image4, Image5, Image6];
 export const guide = [Picture1, Picture2, Picture3, Picture4, Picture5];
@@ -78,25 +96,94 @@ export const asia = [
   }
 ];
 
-export const america = [
+export const northAmerica = [
   {
     name: "Los Angeles",
-    picture: America1
+    picture: NorthAmerica1
   },
   {
-    name: "Rio de Janeiro",
-    picture: America2
+    name: "San Francisco",
+    picture: NorthAmerica2
   },
   {
     name: "New York",
-    picture: America3
+    picture: NorthAmerica3
   },
   {
-    name: "Buenos Aires",
-    picture: America4
+    name: "Vancouver",
+    picture: NorthAmerica4
   },
   {
     name: "Las Vegas",
-    picture: America5
+    picture: NorthAmerica5
+  }
+];
+
+export const southAmerica = [
+  {
+    name: "Rio de Janeiro",
+    picture: SouthAmerica1
+  },
+  {
+    name: "Buenos Aires",
+    picture: SouthAmerica2
+  },
+  {
+    name: "Medellin",
+    picture: SouthAmerica3
+  },
+  {
+    name: "Aruba",
+    picture: SouthAmerica4
+  },
+  {
+    name: "Curacao",
+    picture: SouthAmerica5
+  }
+];
+
+export const oceania = [
+  {
+    name: "Sydney",
+    picture: Oceania1
+  },
+  {
+    name: "Melbourne",
+    picture: Oceania2
+  },
+  {
+    name: "Auckland",
+    picture: Oceania3
+  },
+  {
+    name: "Perth",
+    picture: Oceania4
+  },
+  {
+    name: "Wellington",
+    picture: Oceania5
+  }
+];
+
+export const africa = [
+  {
+    name: "Marrakesh",
+    picture: Africa1
+  },
+  {
+    name: "Cape Town",
+    picture: Africa2
+  },
+  {
+    name: "Cairo",
+    picture: Africa3
+  },
+  {
+    name: "Johannesburg",
+    picture: Africa4
+  },
+  {
+    name: "Nairobi",
+    picture: Africa5
   }
 ];
