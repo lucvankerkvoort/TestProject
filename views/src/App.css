@@ -102,7 +102,7 @@ button:hover {
     width: 100px;
   }
   .country {
-    display: none;
+    display: none !important;
   }
   .country-list {
     justify-content: center;
@@ -252,10 +252,31 @@ button:hover {
   height: 75%;
 }
 .country {
-  height: 100%;
-  width: 200px;
-  margin-left: 5px;
-  border: 2px solid black;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 5px 5px 12px black;
+  justify-content: center;
+  align-items: flex-end;
+  height: 80%;
+  width: 175px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.country:hover {
+  transform: scale(1.1);
+  transition: all 0.42s;
+}
+.country p {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0 20% 0 20%;
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 5px 5px 5px black;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .mobile {
   background: white;

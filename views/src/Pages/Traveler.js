@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "../Components/NavBar";
-import { traveler } from "../Components/images";
+import { traveler, europe, america, asia } from "../Components/images";
 import BackgroundSlideshow from "react-background-slideshow";
 
 class Traveler extends React.Component {
@@ -24,11 +24,19 @@ class Traveler extends React.Component {
           <div className="countries-left">
             <h2 className="continent">Europe</h2>
             <div className="country-list">
-              <div id="mobile" className="country" />
-              <div className="country" />
-              <div className="country" />
-              <div className="country" />
-              <div className="country" />
+              <div id="mobile"></div>
+              {europe.map(city => {
+                const divStyle = {
+                  background: `url(${city.picture})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center"
+                };
+                return (
+                  <div className="country" style={divStyle}>
+                    <p>{city.name}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
           <div className="filler-right"></div>
@@ -39,11 +47,19 @@ class Traveler extends React.Component {
           <div className="countries-right">
             <h2 className="continent">Asia</h2>
             <div className="country-list">
-              <div id="mobile" className="country" />
-              <div className="country" />
-              <div className="country" />
-              <div className="country" />
-              <div className="country" />
+              <div id="mobile"></div>
+              {asia.map(city => {
+                const divStyle = {
+                  background: `url(${city.picture})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center"
+                };
+                return (
+                  <div className="country" style={divStyle}>
+                    <p>{city.name}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -52,11 +68,19 @@ class Traveler extends React.Component {
           <div className="countries-left">
             <h2 className="continent">The Americas</h2>
             <div className="country-list">
-              <div id="mobile" className="country" />
-              <div className="country" />
-              <div className="country" />
-              <div className="country" />
-              <div className="country" />
+              <div id="mobile"></div>
+              {america.map(city => {
+                const divStyle = {
+                  background: `url(${city.picture})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center"
+                };
+                return (
+                  <div className="country" style={divStyle}>
+                    <p>{city.name}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
           <div className="filler-right"></div>
