@@ -3,7 +3,7 @@ import Search from "../Search";
 
 class NavBar extends React.Component {
   state = {
-    user: "traveler",
+    user: "guide",
     search: false
   };
   navbar = {

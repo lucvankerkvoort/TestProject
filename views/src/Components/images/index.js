@@ -53,7 +53,8 @@ export const guide = [Picture1, Picture2, Picture3, Picture4, Picture5];
 export const europe = [
   {
     name: "Paris",
-    picture: Europe1
+    picture: Europe1,
+    class: "carousel-item active"
   },
   {
     name: "Rome",
@@ -76,7 +77,8 @@ export const europe = [
 export const asia = [
   {
     name: "Bangkok",
-    picture: Asia1
+    picture: Asia1,
+    class: "carousel-item active"
   },
   {
     name: "Tokyo",
@@ -99,7 +101,8 @@ export const asia = [
 export const northAmerica = [
   {
     name: "Los Angeles",
-    picture: NorthAmerica1
+    picture: NorthAmerica1,
+    class: "carousel-item active"
   },
   {
     name: "San Francisco",
@@ -122,7 +125,8 @@ export const northAmerica = [
 export const southAmerica = [
   {
     name: "Rio de Janeiro",
-    picture: SouthAmerica1
+    picture: SouthAmerica1,
+    class: "carousel-item active"
   },
   {
     name: "Buenos Aires",
@@ -145,7 +149,8 @@ export const southAmerica = [
 export const oceania = [
   {
     name: "Sydney",
-    picture: Oceania1
+    picture: Oceania1,
+    class: "carousel-item active"
   },
   {
     name: "Melbourne",
@@ -168,7 +173,8 @@ export const oceania = [
 export const africa = [
   {
     name: "Marrakesh",
-    picture: Africa1
+    picture: Africa1,
+    class: "carousel-item active"
   },
   {
     name: "Cape Town",
