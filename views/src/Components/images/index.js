@@ -47,6 +47,9 @@ import Africa3 from "./Africa3.jpg";
 import Africa4 from "./Africa4.jpg";
 import Africa5 from "./Africa5.jpg";
 
+import WhiteStar from "./noun_Star_2952347.png";
+import BlackStar from "./noun_Star_2952947.png";
+
 export const traveler = [Image1, Image2, Image3, Image4, Image5, Image6];
 export const guide = [Picture1, Picture2, Picture3, Picture4, Picture5];
 
@@ -193,3 +196,5 @@ export const africa = [
     picture: Africa5
   }
 ];
+
+export const stars = [WhiteStar, BlackStar];

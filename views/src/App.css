@@ -108,6 +108,12 @@ button:hover {
     justify-content: center;
     margin: 0px;
   }
+  .profile-pic {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    right: 35% !important;
+  }
   #mobile {
     display: flex !important;
     width: 100%;
@@ -163,12 +169,35 @@ button:hover {
 
 .guide-welcome h2 {
   margin: 0px;
+  color: white;
+  text-shadow: 2px 2px 10px black;
 }
 
-.guide-general {
+.rating {
+  height: 5vh;
+  width: 210px;
+  margin-bottom: 10px;
+}
+.stars {
+  width: 40px;
+}
+.profile-pic {
+  display: flex;
+  position: relative;
+  right: 20%;
+  top: 30%;
+  box-shadow: 6px 6px 12px black;
+  border-radius: 50%;
+}
+.guide-welcome p {
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+.guide-section {
   position: relative;
   z-index: 15;
-  height: 40vh;
+  height: 30vh;
+  box-shadow: 0px 6px 20px black;
   background-image: linear-gradient(
     to right bottom,
     #1b279d,
@@ -178,11 +207,52 @@ button:hover {
     #49edca
   );
 }
-.guide-footer {
+
+#section1 {
+  display: flex;
+  justify-content: center;
+}
+.guide-filler {
   z-index: 15;
   position: relative;
   height: 20vh;
   background: rgba(255, 255, 255, 0.3);
+}
+#filler1 {
+  height: 30vh;
+}
+.guide-requests {
+  border: 2px solid black;
+  margin: 5px;
+  width: 30%;
+}
+.guide-mid-section {
+  height: 100%;
+  width: 50%;
+}
+.guide-blank {
+  height: 45%;
+  margin: 8px;
+  border: 2px solid black;
+}
+.guide-stats {
+  height: 45%;
+  margin: 8px;
+  border: 2px solid black;
+}
+.guide-reservations {
+  border-radius: 10px;
+  box-shadow: 0px 6px 20px black;
+  width: 50vw;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.guide-reservations h3 {
+  color: white;
+  font-size: 1.4em;
+  text-shadow: 2px 2px 10px black;
 }
 
 /* ------------------------------------------------------------ */
