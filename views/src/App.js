@@ -5,7 +5,7 @@ import Traveler from "./Pages/Traveler";
 import "./App.css";
 
 function App() {
-  return <Traveler />;
+  return <Guide />;
 }
 
 export default App;
