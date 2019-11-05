@@ -1,4 +1,10 @@
+h3 {
+  color: white;
+  text-shadow: 2px 2px 10px black;
+}
+
 /* --------------------- Login Page -------------------- */
+
 .login {
   display: flex;
   justify-content: center;
@@ -137,6 +143,34 @@ button:hover {
     padding: 0 10% 0 10%;
     text-shadow: 2px 2px 10px black;
   }
+  #guide-reservations {
+    width: 600px;
+  }
+  #guide-reservations h3 {
+    font-size: 1.1rem;
+  }
+  #guide-upcoming {
+    width: 400px;
+  }
+  #section2 {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #mobile-statistics {
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+  }
+  #mobile-upcoming {
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+  }
+  #mobile-reviews {
+    width: 90%;
+    text-align: center;
+    cursor: pointer;
+  }
 }
 
 #mobile {
@@ -221,28 +255,13 @@ button:hover {
 #filler1 {
   height: 30vh;
 }
-.guide-requests {
-  border: 2px solid black;
-  margin: 5px;
-  width: 30%;
-}
-.guide-mid-section {
-  height: 100%;
-  width: 50%;
-}
-.guide-blank {
-  height: 45%;
-  margin: 8px;
-  border: 2px solid black;
-}
-.guide-stats {
-  height: 45%;
-  margin: 8px;
-  border: 2px solid black;
-}
+
 .guide-reservations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 10px;
-  box-shadow: 0px 6px 20px black;
+  box-shadow: 6px 6px 20px black;
   width: 50vw;
   text-align: center;
   margin: 20px;
@@ -255,6 +274,82 @@ button:hover {
   text-shadow: 2px 2px 10px black;
 }
 
+.guide-upcoming {
+  display: flex;
+  height: 100%;
+  width: 70%;
+  justify-content: center;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to right bottom,
+    #d5e008,
+    #e5b900,
+    #ee8f00,
+    #f15f00,
+    #eb1212
+  );
+  box-shadow: 3px 3px 12px black;
+  z-index: 16;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px black;
+  cursor: pointer;
+}
+.guide-profile-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+.guide-profile-icon img {
+  border-radius: 50%;
+}
+.guide-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.guide-dates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.guide-dates p {
+  margin: 0;
+}
+
+#section2 {
+  display: flex;
+  height: 50vh;
+}
+
+.guide-statistics {
+  padding: 15px;
+  margin: 20px;
+  width: 30%;
+  box-shadow: 3px 3px 12px black;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.upcoming-reservations {
+  padding: 15px;
+  margin: 20px;
+  width: 40%;
+  box-shadow: 3px 3px 12px black;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.guide-reviews {
+  padding: 15px;
+  margin: 20px;
+  width: 30%;
+  box-shadow: 3px 3px 12px black;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
 /* ------------------------------------------------------------ */
 
 /* --------------------- Traveler -------------------- */

@@ -40,17 +40,45 @@ class Guide extends React.Component {
             alt="placeholder"
           />
 
-          <div id="rating" className="rating" />
+          <div id="rating" />
           <h2>Welcome {this.state.userName}</h2>
           <p>You can find all of your info below</p>
         </div>
         <div id="section1" className="guide-section">
-          <div className="guide-reservations">
-            <h3>Upcoming Reservations</h3>
+          <div id="guide-reservations" className="guide-reservations">
+            <h3>Next Reservation</h3>
+            <div id="guide-upcoming" className="guide-upcoming">
+              <div className="guide-profile-icon">
+                <img src="https://via.placeholder.com/60" />
+              </div>
+              <div className="guide-name">
+                <p>Luc van Kerkvoort</p>
+              </div>
+              <div className="guide-dates">
+                <p>From: 11/06/2019 </p> <p> Till: 11/16/2019</p>
+              </div>
+            </div>
           </div>
         </div>
         <div id="filler1" className="guide-filler" />
-        <div id="section2" className="guide-section" />
+        <div id="section2" className="guide-section">
+          <div id="mobile-statistics" className="guide-statistics">
+            <h3>Statistics</h3>
+            <div className="guide-stats">
+              <p>Rating: {this.state.rating}</p>
+              <p>Completed Tours: </p>
+              <p>Reviews: </p>
+              <p>Tours: </p>
+            </div>
+          </div>
+
+          <div id="mobile-upcoming" className="upcoming-reservations">
+            <h3>Upcoming Reservations</h3>
+          </div>
+          <div id="mobile-reviews" className="guide-reviews">
+            <h3>Reviews</h3>
+          </div>
+        </div>
         <div id="filler2" className="guide-filler" />
       </div>
     );
