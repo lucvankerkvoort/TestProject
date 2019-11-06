@@ -62,6 +62,13 @@ class Guide extends React.Component {
         </div>
         <div id="filler1" className="guide-filler" />
         <div id="section2" className="guide-section">
+          <div id="mobile-reviews" className="guide-reviews">
+            <h3>Reviews</h3>
+          </div>
+
+          <div id="mobile-upcoming" className="upcoming-reservations">
+            <h3>Upcoming Reservations</h3>
+          </div>
           <div id="mobile-statistics" className="guide-statistics">
             <h3>Statistics</h3>
             <div className="guide-stats">
@@ -70,13 +77,6 @@ class Guide extends React.Component {
               <p>Reviews: </p>
               <p>Tours: </p>
             </div>
-          </div>
-
-          <div id="mobile-upcoming" className="upcoming-reservations">
-            <h3>Upcoming Reservations</h3>
-          </div>
-          <div id="mobile-reviews" className="guide-reviews">
-            <h3>Reviews</h3>
           </div>
         </div>
         <div id="filler2" className="guide-filler" />

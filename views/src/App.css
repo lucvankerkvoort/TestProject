@@ -320,6 +320,9 @@ button:hover {
 .guide-dates p {
   margin: 0;
 }
+.guide-profile-icon img {
+  box-shadow: 5px 5px 10px black;
+}
 
 #section2 {
   display: flex;
