@@ -8,6 +8,7 @@ class Guide extends React.Component {
     userName: "Luc",
     rating: 3
   };
+
   componentDidMount() {
     const rating = document.getElementById("rating");
     let picture;
@@ -62,7 +63,11 @@ class Guide extends React.Component {
         </div>
         <div id="filler1" className="guide-filler" />
         <div id="section2" className="guide-section">
-          <div id="mobile-reviews" className="guide-reviews">
+          <div
+            onClick={this.clickChange}
+            id="mobile-reviews"
+            className="guide-reviews"
+          >
             <h3>Reviews</h3>
           </div>
 

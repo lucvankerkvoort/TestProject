@@ -161,6 +161,12 @@ button:hover {
     text-align: center;
     cursor: pointer;
   }
+  .guide-stats {
+    display: none;
+  }
+  .visible{
+    display: flex;
+  }
   #mobile-upcoming {
     width: 90%;
     text-align: center;
