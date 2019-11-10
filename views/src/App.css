@@ -199,6 +199,9 @@ button:active {
   #availability-calendar {
     width: 70vw !important;
   }
+  .tours-section {
+    width: 80vw !important;
+  }
 }
 
 #mobile {
@@ -703,4 +706,99 @@ background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #0
   margin: 5px;
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 2px 2px 5px black;
+}
+
+/* ----------------------------- Tours ----------------------*/
+
+.tours {
+  display: flex;
+  flex-direction: column;
+}
+
+.tours-welcome {
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 15;
+}
+.tours-welcome h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tours-main {
+  display: flex;
+  height: 80vh;
+  z-index: 15;
+  justify-content: center;
+}
+
+.main-filler-left {
+  position: absolute;
+  left: 0px;
+  height: 80vh;
+  width: 25vw;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 14;
+}
+.main-filler-right {
+  position: absolute;
+  width: 25vw;
+  right: 0px;
+  height: 80vh;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 14;
+}
+.tours-section {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to left bottom,
+    #f9f871,
+    #a8f38c,
+    #57e6b2,
+    #00d3d0,
+    #00bcdc
+  );
+  z-index: 15;
+  box-shadow: 3px 6px 25px black;
+}
+.tours-filler {
+  display: flex;
+  height: 40vh;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 14;
+}
+
+.tour {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 12%;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    to right bottom,
+    #d5e008,
+    #e5b900,
+    #ee8f00,
+    #f15f00,
+    #eb1212
+  );
+  margin: 5px 0px 5px 0px;
+  box-shadow: 6px 6px 10px black;
+}
+
+.mini-profile {
+  display: flex;
+  height: 50px;
+  box-shadow: 6px 6px 10px black;
+  width: 50px;
+  border-radius: 50%;
 }
