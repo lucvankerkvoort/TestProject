@@ -2,6 +2,7 @@ import React from "react";
 import { traveler } from "../Components/images";
 import Registration from "../Components/Registration";
 import BackgroundSlideshow from "react-background-slideshow";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class Login extends React.Component {
   state = {
@@ -29,9 +30,11 @@ class Login extends React.Component {
                 type="password"
                 placeholder="Password"
               />
-              <button type="submit" onClick={this.login}>
-                Submit
-              </button>
+              <Link to="/Traveler">
+                <button type="submit" onClick={this.login}>
+                  Submit
+                </button>
+              </Link>
             </form>
             <br />
             {this.state.showRegistration ? (

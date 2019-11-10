@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../Components/NavBar";
 import {
   traveler,
   europe,
@@ -18,7 +17,6 @@ class Traveler extends React.Component {
   render() {
     return (
       <div className="traveler">
-        <NavBar />
         <div className="traveler-background">
           <BackgroundSlideshow images={traveler} />
         </div>
@@ -42,15 +40,19 @@ class Traveler extends React.Component {
                     {europe.map((city, i) => {
                       return (
                         <div
+                          key={i}
                           className={city.class ? city.class : "carousel-item"}
                         >
                           <img
+                            key={i + 2}
                             className="d-block w-100"
                             src={city.picture}
                             height="175px"
                             alt={i}
                           />
-                          <p className="tagline-carousel">{city.name}</p>
+                          <p key={i + 3} className="tagline-carousel">
+                            {city.name}
+                          </p>
                         </div>
                       );
                     })}
@@ -81,15 +83,15 @@ class Traveler extends React.Component {
                   </a>
                 </div>
               </div>
-              {europe.map(city => {
+              {europe.map((city, i) => {
                 const divStyle = {
                   background: `url(${city.picture})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center"
                 };
                 return (
-                  <div className="country" style={divStyle}>
-                    <p>{city.name}</p>
+                  <div key={i} className="country" style={divStyle}>
+                    <p key={i + 1}>{city.name}</p>
                   </div>
                 );
               })}
@@ -113,15 +115,19 @@ class Traveler extends React.Component {
                     {asia.map((city, i) => {
                       return (
                         <div
+                          key={i}
                           className={city.class ? city.class : "carousel-item"}
                         >
                           <img
+                            key={i + 4}
                             className="d-block w-100"
                             src={city.picture}
                             height="175px"
                             alt={i}
                           />
-                          <p className="tagline-carousel">{city.name}</p>
+                          <p key={i + 5} className="tagline-carousel">
+                            {city.name}
+                          </p>
                         </div>
                       );
                     })}
@@ -130,7 +136,6 @@ class Traveler extends React.Component {
                     className="carousel-control-prev"
                     href="#carousel2Controls"
                     role="button"
-                    z
                     data-slide="prev"
                   >
                     <span
@@ -153,15 +158,15 @@ class Traveler extends React.Component {
                   </a>
                 </div>
               </div>
-              {asia.map(city => {
+              {asia.map((city, i) => {
                 const divStyle = {
                   background: `url(${city.picture})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center"
                 };
                 return (
-                  <div className="country" style={divStyle}>
-                    <p>{city.name}</p>
+                  <div key={i} className="country" style={divStyle}>
+                    <p key={i + 1}>{city.name}</p>
                   </div>
                 );
               })}
@@ -183,6 +188,7 @@ class Traveler extends React.Component {
                     {northAmerica.map((city, i) => {
                       return (
                         <div
+                          key={i}
                           className={city.class ? city.class : "carousel-item"}
                         >
                           <img
@@ -222,14 +228,14 @@ class Traveler extends React.Component {
                   </a>
                 </div>
               </div>
-              {northAmerica.map(city => {
+              {northAmerica.map((city, i) => {
                 const divStyle = {
                   background: `url(${city.picture})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center"
                 };
                 return (
-                  <div className="country" style={divStyle}>
+                  <div key={i} className="country" style={divStyle}>
                     <p>{city.name}</p>
                   </div>
                 );
@@ -254,6 +260,7 @@ class Traveler extends React.Component {
                     {southAmerica.map((city, i) => {
                       return (
                         <div
+                          key={i}
                           className={city.class ? city.class : "carousel-item"}
                         >
                           <img
@@ -293,14 +300,14 @@ class Traveler extends React.Component {
                   </a>
                 </div>
               </div>
-              {southAmerica.map(city => {
+              {southAmerica.map((city, i) => {
                 const divStyle = {
                   background: `url(${city.picture})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center"
                 };
                 return (
-                  <div className="country" style={divStyle}>
+                  <div key={i} className="country" style={divStyle}>
                     <p>{city.name}</p>
                   </div>
                 );
@@ -323,6 +330,7 @@ class Traveler extends React.Component {
                     {oceania.map((city, i) => {
                       return (
                         <div
+                          key={i}
                           className={city.class ? city.class : "carousel-item"}
                         >
                           <img
@@ -362,14 +370,14 @@ class Traveler extends React.Component {
                   </a>
                 </div>
               </div>
-              {oceania.map(city => {
+              {oceania.map((city, i) => {
                 const divStyle = {
                   background: `url(${city.picture})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center"
                 };
                 return (
-                  <div className="country" style={divStyle}>
+                  <div key={i} className="country" style={divStyle}>
                     <p>{city.name}</p>
                   </div>
                 );
@@ -394,6 +402,7 @@ class Traveler extends React.Component {
                     {africa.map((city, i) => {
                       return (
                         <div
+                          key={i}
                           className={city.class ? city.class : "carousel-item"}
                         >
                           <img
@@ -433,14 +442,14 @@ class Traveler extends React.Component {
                   </a>
                 </div>
               </div>
-              {africa.map(city => {
+              {africa.map((city, i) => {
                 const divStyle = {
                   background: `url(${city.picture})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center"
                 };
                 return (
-                  <div className="country" style={divStyle}>
+                  <div key={i} className="country" style={divStyle}>
                     <p>{city.name}</p>
                   </div>
                 );

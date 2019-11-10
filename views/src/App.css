@@ -60,7 +60,7 @@ button {
   );
 }
 
-button:hover {
+button:active {
   box-shadow: 1px 1px 1px black;
 }
 
@@ -101,6 +101,15 @@ button:hover {
 }
 
 @media only screen and (max-width: 678px) {
+  * {
+    font-size: 11px;
+  }
+  #switch-button {
+    width: 20px !important;
+  }
+  .navbar-switch label {
+    display: none;
+  }
   .close {
     right: 15%;
   }
@@ -119,6 +128,10 @@ button:hover {
     width: 90px;
     height: 90px;
     right: 35% !important;
+  }
+
+  .welcome-message {
+    margin-left: 20%;
   }
   #mobile {
     display: flex !important;
@@ -144,13 +157,13 @@ button:hover {
     text-shadow: 2px 2px 10px black;
   }
   #guide-reservations {
-    width: 600px;
+    width: 80vw;
   }
   #guide-reservations h3 {
     font-size: 1.1rem;
   }
   #guide-upcoming {
-    width: 400px;
+    width: 100%;
   }
   #section2 {
     flex-direction: column;
@@ -164,7 +177,7 @@ button:hover {
   .guide-stats {
     display: none;
   }
-  .visible{
+  .visible {
     display: flex;
   }
   #mobile-upcoming {
@@ -176,6 +189,12 @@ button:hover {
     width: 90%;
     text-align: center;
     cursor: pointer;
+  }
+  .navbar-switch label {
+    font-size: 10px;
+  }
+  .navbar-switch button {
+    height: 10px;
   }
 }
 
@@ -201,7 +220,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 60vh;
   position: relative;
   background: rgba(255, 255, 255, 0.3);
   z-index: 15;
@@ -230,7 +249,7 @@ button:hover {
   border-radius: 50%;
 }
 .guide-welcome p {
-  color: white;
+  color: black;
   text-shadow: 2px 2px 10px black;
 }
 .guide-section {
@@ -239,17 +258,18 @@ button:hover {
   height: 30vh;
   box-shadow: 0px 6px 20px black;
   background-image: linear-gradient(
-    to right bottom,
-    #1b279d,
-    #0065cf,
-    #0096de,
-    #00c4d7,
-    #49edca
+    to left bottom,
+    #f9f871,
+    #a8f38c,
+    #57e6b2,
+    #00d3d0,
+    #00bcdc
   );
 }
 
 #section1 {
   display: flex;
+  height: 45vh;
   justify-content: center;
 }
 .guide-filler {
@@ -266,6 +286,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 35vh;
   border-radius: 10px;
   box-shadow: 6px 6px 20px black;
   width: 50vw;
@@ -275,16 +296,18 @@ button:hover {
   background: rgba(255, 255, 255, 0.3);
 }
 .guide-reservations h3 {
-  color: white;
+  color: black;
   font-size: 1.4em;
   text-shadow: 2px 2px 10px black;
 }
-
+.guide-switch {
+}
 .guide-upcoming {
   display: flex;
   height: 100%;
+  margin: 20px;
   width: 70%;
-  justify-content: center;
+  justify-content: space-evenly;
   border-radius: 50px;
   background-image: linear-gradient(
     to right bottom,
@@ -296,8 +319,8 @@ button:hover {
   );
   box-shadow: 3px 3px 12px black;
   z-index: 16;
-  color: white;
-  font-weight: bold;
+  color: black;
+  font-size: 11px;
   text-shadow: 2px 2px 10px black;
   cursor: pointer;
 }
@@ -343,6 +366,10 @@ button:hover {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
 }
+.guide-statistics h3 {
+  color: black;
+}
+
 .upcoming-reservations {
   padding: 15px;
   margin: 20px;
@@ -351,6 +378,9 @@ button:hover {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
 }
+.upcoming-reservations h3 {
+  color: black;
+}
 .guide-reviews {
   padding: 15px;
   margin: 20px;
@@ -358,6 +388,10 @@ button:hover {
   box-shadow: 3px 3px 12px black;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
+}
+
+.guide-reviews h3 {
+  color: black;
 }
 /* ------------------------------------------------------------ */
 
@@ -522,18 +556,36 @@ button:hover {
 .navbar-menu {
   display: flex;
   justify-content: space-evenly;
-  width: 60vw;
+  width: 50vw;
 }
-
+.navbar-switch {
+  display: flex;
+  width: 15vw;
+}
+.navbar-switch label {
+  margin-left: 15px;
+}
 .navbar-menu p {
   cursor: pointer;
 }
 .navbar-search {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40vw;
+  width: 20vw;
 }
+
+.background-switch {
+  color: black;
+  background-image: linear-gradient(
+    to left bottom,
+    #f9f871,
+    #a8f38c,
+    #57e6b2,
+    #00d3d0,
+    #00bcdc
+  ) !important;
+  z-index: 20;
+}
+
 /* 
 background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #00a2d6, #00c4d7, #00c9cc, #13cdbe, #3ad0ae, #2ebb9a, #21a686, #139273, #007e61); 
 #007E61

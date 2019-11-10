@@ -41,16 +41,18 @@ class Guide extends React.Component {
             alt="placeholder"
           />
 
-          <div id="rating" />
-          <h2>Welcome {this.state.userName}</h2>
-          <p>You can find all of your info below</p>
+          <div className="welcome-message">
+            <div id="rating" />
+            <h2>Welcome {this.state.userName}</h2>
+            <p>You can find all of your info below</p>
+          </div>
         </div>
         <div id="section1" className="guide-section">
           <div id="guide-reservations" className="guide-reservations">
             <h3>Next Reservation</h3>
             <div id="guide-upcoming" className="guide-upcoming">
               <div className="guide-profile-icon">
-                <img src="https://via.placeholder.com/60" />
+                <img src="https://via.placeholder.com/60" alt="profile-icon" />
               </div>
               <div className="guide-name">
                 <p>Luc van Kerkvoort</p>
