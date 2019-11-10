@@ -196,6 +196,9 @@ button:active {
   .navbar-switch button {
     height: 10px;
   }
+  #availability-calendar {
+    width: 70vw !important;
+  }
 }
 
 #mobile {
@@ -213,6 +216,11 @@ button:active {
   height: 110vh;
   width: 100%;
   top: 0px;
+}
+
+#section2 h3 {
+  color: black;
+  text-shadow: 1px 1px 4px black;
 }
 
 .guide-welcome {
@@ -298,7 +306,7 @@ button:active {
 .guide-reservations h3 {
   color: black;
   font-size: 1.4em;
-  text-shadow: 2px 2px 10px black;
+  text-shadow: 2px 1px 5px black;
 }
 .guide-switch {
 }
@@ -320,9 +328,17 @@ button:active {
   box-shadow: 3px 3px 12px black;
   z-index: 16;
   color: black;
-  font-size: 11px;
-  text-shadow: 2px 2px 10px black;
+  text-shadow: 2px 2px 3px black;
   cursor: pointer;
+}
+.welcome-message h2 {
+  color: black;
+  text-shadow: 2px 2px 3px black;
+}
+
+.welcome-message p {
+  color: black;
+  text-shadow: 2px 2px 3px black;
 }
 .guide-profile-icon {
   display: flex;
@@ -535,7 +551,7 @@ button:active {
 /* --------------------- Navbar -------------------- */
 
 .navbar {
-  display: flex;
+  display: inline-flex;
   width: 100%;
   height: 10vh;
   position: fixed;
@@ -553,6 +569,10 @@ button:active {
   );
 }
 
+.navbar-traveler {
+  color: white;
+  text-shadow: 3px 3px 10px black;
+}
 .navbar-menu {
   display: flex;
   justify-content: space-evenly;
@@ -574,7 +594,6 @@ button:active {
 }
 
 .background-switch {
-  color: black;
   background-image: linear-gradient(
     to left bottom,
     #f9f871,
@@ -585,9 +604,103 @@ button:active {
   ) !important;
   z-index: 20;
 }
+.background-switch p {
+  color: black;
+  text-shadow: 0px 0px 1px black;
+}
+.background-switch label {
+  color: black;
+  text-shadow: 0px 0px 1px black;
+}
 
 /* 
 background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #00a2d6, #00c4d7, #00c9cc, #13cdbe, #3ad0ae, #2ebb9a, #21a686, #139273, #007e61); 
 #007E61
 #49EDCA
 #1B279D */
+
+/* -------------------------------------- availability ----------------------------------------- */
+
+.availability {
+  z-index: 16;
+  display: flex;
+  flex-direction: column;
+}
+.availability-background {
+  position: fixed;
+  height: 110vh;
+  width: 100%;
+  top: 0px;
+}
+.availability-welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  z-index: 15;
+}
+.availability-calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 15;
+  height: 30vh;
+  background-image: linear-gradient(
+    to left bottom,
+    #f9f871,
+    #a8f38c,
+    #57e6b2,
+    #00d3d0,
+    #00bcdc
+  );
+  box-shadow: 0px 6px 25px black;
+}
+
+#availability-calendar {
+  display: flex;
+  width: 650px;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 10px black;
+  border-radius: 10px;
+}
+
+.availability-filler {
+  display: flex;
+  height: 20vh;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 15;
+}
+.availability-user {
+  display: flex;
+  height: 40vh;
+  flex-direction: column;
+  background-image: linear-gradient(
+    to left bottom,
+    #f9f871,
+    #a8f38c,
+    #57e6b2,
+    #00d3d0,
+    #00bcdc
+  );
+  z-index: 15;
+  box-shadow: 0px 6px 25px black;
+}
+.availability-user h2 {
+  display: flex;
+  justify-content: center;
+}
+.availability-dates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 250px;
+  padding: 5px;
+  border-radius: 24px;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 5px black;
+}

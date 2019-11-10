@@ -9,10 +9,9 @@ class NavBar extends React.Component {
     switched: false
   };
   navbar = {
-    traveler: ["Search", "Tours", "Options"],
-    guide: ["Availability", "Tours", "Options"]
+    traveler: ["Traveler", "Search", "Tours", "Options"],
+    guide: ["Guide", "Availability", "Tours", "Options"]
   };
-
   componentWillMount = () => {
     if (this.state.user === "Traveler") {
       this.setState({ search: true });
@@ -27,7 +26,6 @@ class NavBar extends React.Component {
     }
   };
   render() {
-    console.log(this.state.user);
     return (
       <div
         className={this.state.switched ? "navbar background-switch" : "navbar"}
@@ -35,10 +33,26 @@ class NavBar extends React.Component {
         <div className="navbar-menu">
           {this.state.user === "Traveler"
             ? this.navbar.traveler.map((options, i) => {
-                return <p key={i}>{options}</p>;
+                return (
+                  <Link to={"/" + options}>
+                    <p
+                      onClick={this.option}
+                      className="navbar-traveler"
+                      key={i}
+                    >
+                      {options}
+                    </p>
+                  </Link>
+                );
               })
             : this.navbar.guide.map((options, i) => {
-                return <p key={i}>{options}</p>;
+                return (
+                  <Link to={"/" + options}>
+                    <p onClick={this.option} className="navbar-guide" key={i}>
+                      {options}
+                    </p>
+                  </Link>
+                );
               })}
         </div>
         <div className="navbar-switch">

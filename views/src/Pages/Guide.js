@@ -28,7 +28,6 @@ class Guide extends React.Component {
   render() {
     return (
       <div className="guide">
-        <NavBar />
         <div className="guide-background">
           <BackgroundSlideshow images={guide} />
         </div>
