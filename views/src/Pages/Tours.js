@@ -17,7 +17,6 @@ class Tours extends React.Component {
           <h2>Here You Can Check Your Active Tours</h2>
         </div>
         <div className="tours-main">
-          <div className="main-filler-left" />
           <div className="tours-section">
             <div className="tour">
               <div className="mini-profile"></div>
@@ -35,7 +34,6 @@ class Tours extends React.Component {
               <p>dates</p>
             </div>
           </div>
-          <div className="main-filler-right" />
         </div>
         <div className="tours-filler"></div>
       </div>
