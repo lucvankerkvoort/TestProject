@@ -17,9 +17,7 @@ class Options extends React.Component {
               <h2>Here You Can Change Your Information</h2>
             </div>
             <div className="main-options">
-              <div className="main-filler-left" />
               <div className="main-section-guide"></div>
-              <div className="main-filler-right" />
             </div>
             <div className="options-filler" />
           </div>
@@ -32,9 +30,7 @@ class Options extends React.Component {
               <h2>Here You Can Change Your Information</h2>
             </div>
             <div className="main-options">
-              <div className="main-filler-left" />
               <div className="main-section-traveler"></div>
-              <div className="main-filler-right" />
             </div>
             <div className="options-filler" />
           </div>

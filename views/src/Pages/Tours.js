@@ -17,23 +17,43 @@ class Tours extends React.Component {
           <h2>Here You Can Check Your Active Tours</h2>
         </div>
         <div className="tours-main">
-          <div className="tours-section">
-            <div className="tour">
-              <div className="mini-profile"></div>
-              <p>Name</p>
-              <p>dates</p>
+          {this.state.user === "Guide" ? (
+            <div className="tours-section background-guide">
+              <div className="tour">
+                <div className="mini-profile"></div>
+                <p>Name</p>
+                <p>dates</p>
+              </div>
+              <div className="tour">
+                <div className="mini-profile"></div>
+                <p>Name</p>
+                <p>dates</p>
+              </div>
+              <div className="tour">
+                <div className="mini-profile"></div>
+                <p>Name</p>
+                <p>dates</p>
+              </div>
             </div>
-            <div className="tour">
-              <div className="mini-profile"></div>
-              <p>Name</p>
-              <p>dates</p>
+          ) : (
+            <div className="tours-section background-traveler">
+              <div className="tour">
+                <div className="mini-profile"></div>
+                <p>Name</p>
+                <p>dates</p>
+              </div>
+              <div className="tour">
+                <div className="mini-profile"></div>
+                <p>Name</p>
+                <p>dates</p>
+              </div>
+              <div className="tour">
+                <div className="mini-profile"></div>
+                <p>Name</p>
+                <p>dates</p>
+              </div>
             </div>
-            <div className="tour">
-              <div className="mini-profile"></div>
-              <p>Name</p>
-              <p>dates</p>
-            </div>
-          </div>
+          )}
         </div>
         <div className="tours-filler"></div>
       </div>
