@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../Components/NavBar";
 import { guide, stars } from "../Components/images";
 import BackgroundSlideshow from "react-background-slideshow";
 

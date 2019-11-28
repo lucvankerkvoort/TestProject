@@ -6,14 +6,33 @@ import {
   asia,
   southAmerica,
   oceania,
-  africa
+  africa,
+  stars
 } from "../Components/images";
 import BackgroundSlideshow from "react-background-slideshow";
 
 class Traveler extends React.Component {
   state = {
-    userName: "Luc"
+    userName: "Luc",
+    rating: 3
   };
+
+  componentDidMount() {
+    const rating = document.getElementById("rating");
+    let picture;
+    for (let i = 0; i < 5; i++) {
+      const ratingStars = document.createElement("img");
+      ratingStars.setAttribute("class", "stars");
+
+      if ([i] < this.state.rating) {
+        picture = stars[1];
+      } else {
+        picture = stars[0];
+      }
+      ratingStars.setAttribute("src", picture);
+      rating.append(ratingStars);
+    }
+  }
   render() {
     return (
       <div className="traveler">
@@ -22,8 +41,17 @@ class Traveler extends React.Component {
         </div>
         <div className="traveler-welcome">
           <div className="welcome-message">
+            <div id="rating" />
             <h2>Welcome {this.state.userName}</h2>
             <p>You can find all of your info below</p>
+            <img
+              id="traveler-profile"
+              className="profile-pic"
+              src="https://via.placeholder.com/150"
+              width="150px"
+              height="150px"
+              alt="placeholder"
+            />
           </div>
         </div>
         <div className="traveler-general">
@@ -47,7 +75,7 @@ class Traveler extends React.Component {
                             key={i + 2}
                             className="d-block w-100"
                             src={city.picture}
-                            height="175px"
+                            height="250px"
                             alt={i}
                           />
                           <p key={i + 3} className="tagline-carousel">
@@ -122,7 +150,7 @@ class Traveler extends React.Component {
                             key={i + 4}
                             className="d-block w-100"
                             src={city.picture}
-                            height="175px"
+                            height="250px"
                             alt={i}
                           />
                           <p key={i + 5} className="tagline-carousel">
@@ -194,7 +222,7 @@ class Traveler extends React.Component {
                           <img
                             className="d-block w-100"
                             src={city.picture}
-                            height="175px"
+                            height="250px"
                             alt={i}
                           />
                           <p className="tagline-carousel">{city.name}</p>
@@ -266,7 +294,7 @@ class Traveler extends React.Component {
                           <img
                             className="d-block w-100"
                             src={city.picture}
-                            height="175px"
+                            height="250px"
                             alt={i}
                           />
                           <p className="tagline-carousel">{city.name}</p>
@@ -336,7 +364,7 @@ class Traveler extends React.Component {
                           <img
                             className="d-block w-100"
                             src={city.picture}
-                            height="175px"
+                            height="250px"
                             alt={i}
                           />
                           <p className="tagline-carousel">{city.name}</p>
@@ -408,7 +436,7 @@ class Traveler extends React.Component {
                           <img
                             className="d-block w-100"
                             src={city.picture}
-                            height="175px"
+                            height="250px"
                             alt={i}
                           />
                           <p className="tagline-carousel">{city.name}</p>

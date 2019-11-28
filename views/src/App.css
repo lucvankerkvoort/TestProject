@@ -130,6 +130,11 @@ button:active {
     right: 35% !important;
   }
 
+  #traveler-profile {
+    display: flex;
+    position: absolute;
+    left: 20% !important;
+  }
   .welcome-message {
     margin-left: 20%;
   }
@@ -261,6 +266,11 @@ button:active {
   top: 30%;
   box-shadow: 6px 6px 12px black;
   border-radius: 50%;
+}
+#traveler-profile {
+  display: flex;
+  position: absolute;
+  left: 500px;
 }
 .guide-welcome p {
   color: black;
@@ -496,10 +506,12 @@ button:active {
   box-shadow: 5px 5px 9px black;
 }
 
+.countries-right.country-list {
+  margin: auto;
+}
 .country-list {
   display: flex;
-  margin-left: 25px;
-  margin-right: 25px;
+  justify-content: center;
   height: 75%;
 }
 .country {
