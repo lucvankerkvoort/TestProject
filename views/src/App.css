@@ -324,8 +324,6 @@ button:active {
   font-size: 1.4em;
   text-shadow: 2px 1px 5px black;
 }
-.guide-switch {
-}
 .guide-upcoming {
   display: flex;
   height: 100%;
@@ -877,4 +875,37 @@ background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #0
     #00c4d7,
     #49edca
   );
+}
+/* -------------------------------------- Search ----------------------------------------- */
+
+.search-welcome {
+  display: flex;
+  text-shadow: 2px 2px 3px black;
+  position: relative;
+  padding-top: 150px;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 15;
+  height: 50vh;
+}
+.search-welcome h4 {
+  color: black;
+}
+.searchbar {
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  height: 20vh;
+  display: flex;
+  z-index: 15;
+  justify-content: center;
+}
+.searchbar.search {
+  width: 60vw;
+}
+.search-filler {
+  height: 30vh;
+  position: relative;
+  z-index: 15;
+  background: rgba(255, 255, 255, 0.3);
 }

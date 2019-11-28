@@ -3,9 +3,13 @@ import React from "react";
 class Search extends React.Component {
   render() {
     return (
-      <div className="navbar-search">
+      <div className="search">
         <form>
-          <input type="text" placeholder="Search" />
+          <input
+            style={{ width: this.props.width }}
+            type="text"
+            placeholder="Search"
+          />
         </form>
       </div>
     );

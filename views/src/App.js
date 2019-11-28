@@ -6,6 +6,7 @@ import Guide from "./Pages/Guide";
 import Tours from "./Pages/Tours";
 import Options from "./Pages/Options";
 import Availability from "./Pages/Availability";
+import SearchPage from "./Pages/Search";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 
@@ -64,6 +65,17 @@ function App() {
               <div key={i}>
                 <Navbar />
                 <Availability />
+              </div>
+            );
+          }}
+        />
+        <Route
+          path="/Search"
+          render={i => {
+            return (
+              <div key={i}>
+                <Navbar />
+                <SearchPage />
               </div>
             );
           }}
