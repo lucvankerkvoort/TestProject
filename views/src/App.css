@@ -170,6 +170,7 @@ button:active {
   }
   #guide-upcoming {
     width: 100%;
+    margin-top: 15%;
   }
   #section2 {
     flex-direction: column;
@@ -327,11 +328,11 @@ button:active {
 }
 .guide-upcoming {
   display: flex;
-  height: 100%;
+  height: 50%;
   margin: 20px;
   width: 70%;
   justify-content: space-evenly;
-  border-radius: 50px;
+  border-radius: 100px;
   background-image: linear-gradient(
     to right top,
     #007160,
@@ -745,8 +746,10 @@ background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #0
   background: rgba(255, 255, 255, 0.3);
   z-index: 15;
 }
-.tours-welcome h2 {
+.tours-welcome h3 {
+  color: black;
   display: flex;
+  text-shadow: 2px 2px 10px black;
   justify-content: center;
   align-items: center;
 }
@@ -780,7 +783,7 @@ background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #0
   align-items: center;
   width: 80%;
   height: 70px;
-  border-radius: 24px;
+  border-radius: 50px;
   background-image: linear-gradient(
     to right top,
     #007160,
@@ -822,6 +825,9 @@ background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #0
   z-index: 15;
   height: 40vh;
   background: rgba(255, 255, 255, 0.3);
+}
+.options-welcome h3 {
+  color: black;
 }
 .main-options {
   display: flex;
@@ -906,7 +912,7 @@ background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #0
   z-index: 15;
   height: 50vh;
 }
-.search-welcome h4 {
+.search-welcome h3 {
   color: black;
 }
 .searchbar {

@@ -14,7 +14,7 @@ class Tours extends React.Component {
           />
         </div>
         <div className="tours-welcome">
-          <h2>Here You Can Check Your Active Tours</h2>
+          <h3>Here You Can Check Your Active Tours</h3>
         </div>
         <div className="tours-main">
           {this.state.user === "Guide" ? (

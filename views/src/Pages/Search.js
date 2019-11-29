@@ -15,8 +15,7 @@ class SearchPage extends React.Component {
           <BackgroundSlideshow images={traveler} />
         </div>
         <div className="search-welcome">
-          <h2>Welcome {this.state.userName}</h2>
-          <h4>Here you can search for destinations</h4>
+          <h3>Here You Can Search for Destinations</h3>
         </div>
         <div className="searchbar">
           <Search width="100%" />

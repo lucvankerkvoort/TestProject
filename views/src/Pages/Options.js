@@ -14,7 +14,7 @@ class Options extends React.Component {
               <BackgroundSlideshow images={guide} />
             </div>
             <div className="options-welcome">
-              <h2>Here You Can Change Your Information</h2>
+              <h3>Here You Can Change Your Information</h3>
             </div>
             <div className="main-options">
               <div className="main-section-guide"></div>
@@ -27,7 +27,7 @@ class Options extends React.Component {
               <BackgroundSlideshow images={traveler} />
             </div>
             <div className="options-welcome">
-              <h2>Here You Can Change Your Information</h2>
+              <h3>Here You Can Change Your Information</h3>
             </div>
             <div className="main-options">
               <div className="main-section-traveler"></div>
