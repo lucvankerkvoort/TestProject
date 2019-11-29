@@ -9,6 +9,12 @@ class Login extends React.Component {
     showRegistration: false
   };
 
+  login = () => {
+    const user = "Traveler";
+    localStorage.setItem("user", user);
+    localStorage.setItem("switched", false);
+  };
+
   openRegister = () => {
     this.setState({ showRegistration: true });
   };

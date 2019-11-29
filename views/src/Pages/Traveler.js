@@ -39,19 +39,19 @@ class Traveler extends React.Component {
         <div className="traveler-background">
           <BackgroundSlideshow images={traveler} />
         </div>
-        <div className="traveler-welcome">
+        <div className="guide-welcome">
+          <img
+            className="profile-pic"
+            src="https://via.placeholder.com/150"
+            width="150px"
+            height="150px"
+            alt="placeholder"
+          />
+
           <div className="welcome-message">
             <div id="rating" />
             <h2>Welcome {this.state.userName}</h2>
             <p>You can find all of your info below</p>
-            <img
-              id="traveler-profile"
-              className="profile-pic"
-              src="https://via.placeholder.com/150"
-              width="150px"
-              height="150px"
-              alt="placeholder"
-            />
           </div>
         </div>
         <div className="traveler-general">

@@ -3,7 +3,7 @@ import { guide, traveler } from "../Components/images";
 import BackgroundSlideshow from "react-background-slideshow";
 class Options extends React.Component {
   state = {
-    user: "Guide"
+    user: localStorage.getItem("user")
   };
   render() {
     return (

@@ -4,15 +4,15 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 
 class NavBar extends React.Component {
   state = {
-    user: "Traveler",
+    user: localStorage.getItem("user"),
     search: false,
-    switched: false
+    switched: JSON.parse(localStorage.getItem("switched"))
   };
   navbar = {
     traveler: ["Traveler", "Search", "Tours", "Options"],
     guide: ["Guide", "Availability", "Tours", "Options"]
   };
-  componentWillMount = () => {
+  componentDidMount = () => {
     if (this.state.user === "Traveler") {
       this.setState({ search: true });
     }
@@ -20,12 +20,20 @@ class NavBar extends React.Component {
 
   switch = () => {
     if (!this.state.switched) {
+      const boolean = true;
+      localStorage.setItem("user", "Guide");
+      localStorage.setItem("switched", JSON.stringify(boolean));
       this.setState({ user: "Guide", switched: true });
     } else {
+      const boolean = false;
+      localStorage.setItem("user", "Traveler");
+      localStorage.setItem("switched", JSON.stringify(boolean));
       this.setState({ user: "Traveler", switched: false });
     }
   };
   render() {
+    console.log(typeof this.state.switched);
+    console.log(typeof this.state.user);
     return (
       <div
         className={this.state.switched ? "navbar background-switch" : "navbar"}
@@ -34,7 +42,7 @@ class NavBar extends React.Component {
           {this.state.user === "Traveler"
             ? this.navbar.traveler.map((options, i) => {
                 return (
-                  <Link to={"/" + options}>
+                  <Link key={i} to={"/" + options}>
                     <p
                       onClick={this.option}
                       className="navbar-traveler"
@@ -47,7 +55,7 @@ class NavBar extends React.Component {
               })
             : this.navbar.guide.map((options, i) => {
                 return (
-                  <Link to={"/" + options}>
+                  <Link key={i} to={"/" + options}>
                     <p onClick={this.option} className="navbar-guide" key={i}>
                       {options}
                     </p>

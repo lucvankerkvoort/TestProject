@@ -6,7 +6,7 @@ import Search from "../Components/Search";
 class SearchPage extends React.Component {
   state = {
     userName: "Luc",
-    user: "Traveler"
+    user: localStorage.getItem("user")
   };
   render() {
     return (
@@ -19,7 +19,7 @@ class SearchPage extends React.Component {
           <h4>Here you can search for destinations</h4>
         </div>
         <div className="searchbar">
-          <Search width="600px" />
+          <Search width="100%" />
         </div>
         <div className="search-filler" />
       </div>
