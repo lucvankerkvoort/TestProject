@@ -2,6 +2,7 @@ import React from "react";
 import BackgroundSlideshow from "react-background-slideshow";
 import { traveler } from "../Components/images";
 import Search from "../Components/Search";
+import GoogleMaps from "../Components/GoogleMaps";
 
 class SearchPage extends React.Component {
   state = {
@@ -14,6 +15,7 @@ class SearchPage extends React.Component {
         <div className="guide-background">
           <BackgroundSlideshow images={traveler} />
         </div>
+        <GoogleMaps location={{ lat: 47.444, lng: -122.176 }} />
         <div className="search-welcome">
           <h3>Here You Can Search for Destinations</h3>
         </div>
