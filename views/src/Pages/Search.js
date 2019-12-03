@@ -15,7 +15,9 @@ class SearchPage extends React.Component {
         <div className="guide-background">
           <BackgroundSlideshow images={traveler} />
         </div>
-        <GoogleMaps location={{ lat: 47.444, lng: -122.176 }} />
+        <div className="google-maps">
+          <GoogleMaps location={{ lat: 47.444, lng: -122.176 }} />
+        </div>
         <div className="search-welcome">
           <h3>Here You Can Search for Destinations</h3>
         </div>

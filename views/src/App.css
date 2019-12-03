@@ -932,3 +932,9 @@ background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #0
   z-index: 15;
   background: rgba(255, 255, 255, 0.3);
 }
+
+.google-maps {
+  display: flex;
+  position: relative;
+  z-index: 15;
+}

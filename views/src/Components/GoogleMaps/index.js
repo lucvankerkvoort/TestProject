@@ -6,8 +6,9 @@ class GoogleMaps extends React.Component {
     const { location } = this.props;
     const mapStyles = {
       width: "100%",
-      height: "100%"
+      height: "500px"
     };
+    console.log(location);
     return (
       <Map
         google={this.props.google}
