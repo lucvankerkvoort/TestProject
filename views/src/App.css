@@ -935,6 +935,15 @@ background-image: linear-gradient(to right bottom, #1b279d, #0057c0, #007ed2, #0
 
 .google-maps {
   display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 15;
+  padding: 50px;
+  padding-top: 100px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.google-maps input {
+  display: flex;
+  margin: auto;
 }
